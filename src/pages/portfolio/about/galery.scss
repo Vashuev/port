@@ -1,0 +1,92 @@
+@use "../../../mix.scss" as *;
+.about_container {
+  padding: 0rem 2rem;
+  margin-top: 4rem;
+  .about_hero_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+
+    .about_hero {
+      display: flex;
+      gap: 2rem;
+      @include breack_down(large) {
+        flex-direction: column;
+      }
+      img {
+        width: 50vw;
+        @include breack_down(large) {
+          width: 100%;
+        }
+      }
+      .about_text {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        h3 {
+          color: var(--btn);
+        }
+        h1 {
+          color: var(--text);
+          font-size: 50px;
+          @include breack_down(large) {
+            font-size: 30px;
+          }
+        }
+        p {
+          color: var(--g-color);
+        }
+      }
+    }
+  }
+  .about_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about_show_title {
+      text-align: center;
+      width: 70%;
+      margin-bottom: 1rem;
+      @include breack_down(large) {
+        width: 90%;
+      }
+      h2 {
+        font-size: 36px;
+        color: var(--text);
+        @include breack_down(large) {
+          font-size: 24px;
+        }
+      }
+      p {
+        color: var(--g-color);
+        @include breack_down(large) {
+          flex-direction: column;
+        }
+      }
+    }
+    .about_divs {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      @include breack_down(large) {
+        grid-template-columns: 1fr;
+      }
+      .about_div {
+        width: 30vw;
+        cursor: pointer;
+        @include breack_down(large) {
+          width: 90vw;
+        }
+        @include breack_up(small) {
+          &:hover {
+            scale: 1.05;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

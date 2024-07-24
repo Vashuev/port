@@ -1,0 +1,57 @@
+@use "../../../mix.scss" as *;
+.design_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 4rem;
+  @include breack_down(large) {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .design_left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 40vw;
+    @include breack_down(large) {
+      width: 100%;
+    }
+    h3 {
+      color: var(--btn);
+    }
+    h2 {
+      color: var(--text);
+      font-size: 36px;
+      @include breack_down(large) {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: var(--g-color);
+    }
+    .design_divs {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      @include breack_down(large) {
+        grid-template-columns: 1fr;
+      }
+      .design_div {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+    }
+  }
+  .design_right {
+    width: 40vw;
+    @include breack_down(large) {
+      width: 90%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

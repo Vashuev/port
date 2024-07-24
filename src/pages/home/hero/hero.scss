@@ -1,0 +1,137 @@
+@use "../../../mix.scss" as *;
+.h_c {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: var(--background-color);
+}
+.hb {
+  position: absolute;
+  object-fit: cover;
+  top: 1rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: var(--hb-back);
+}
+.hero_container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 20px 25px;
+  @include breack_down(large) {
+    height: auto;
+    padding-top: 7rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    color: var(--text);
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -2.5px;
+    text-align: center;
+    span {
+      background: linear-gradient(to right, var(--text), var(--g-color));
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+    @include breack_down(large) {
+      font-size: 25px;
+    }
+  }
+  p {
+    color: var(--g-color);
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+    @include breack_down(large) {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+  button {
+    background-color: var(--btn);
+    border: none;
+    color: var(--text);
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+    box-shadow: 0 10px 20px -10px var(--btn-shadow);
+    font-weight: 400;
+  }
+}
+
+.hero_imgages_container {
+  // height: 60vh;
+  @include breack_down(large) {
+    display: none;
+  }
+  .image_height {
+    opacity: 0;
+    width: 30vw;
+  }
+  .hero_images {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    gap: 2rem;
+    width: 110%;
+    left: -5%;
+    height: 100%;
+    justify-content: space-between;
+    img {
+      // width: fit-content;
+      height: fit-content;
+    }
+    .hero_f_1 {
+      width: 20vw;
+    }
+    .hero_f_2 {
+      width: 20vw;
+      margin-top: 4rem;
+    }
+    .hero_f_3 {
+      margin-top: 1rem;
+      width: 30vw;
+      .hero_f_3_a {
+        width: 100%;
+      }
+      .hero_f_3_b {
+        width: 25%;
+        margin-top: 1rem;
+      }
+    }
+    .hero_f_4 {
+      width: 7vw;
+    }
+    .hero_f_5 {
+      width: 23vw;
+    }
+  }
+}
+.hero_images_mob {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  @include breack_up(small) {
+    display: none !important;
+  }
+  .h_images_f {
+    width: 25%;
+    height: fit-content;
+  }
+  .h_images_s {
+    width: 40%;
+    margin-top: 2rem;
+  }
+  .h_images_t {
+    width: 20%;
+    height: fit-content;
+    margin-top: 1rem;
+  }
+}

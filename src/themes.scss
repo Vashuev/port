@@ -1,0 +1,35 @@
+// src/themes.scss
+
+.dark {
+  --background-color: linear-gradient(
+    180deg,
+    rgba(44, 30, 74, 1) 0%,
+    rgba(0, 0, 0, 1) 57%
+  );
+  --hb-back: invert(91%) sepia(15%) saturate(735%) hue-rotate(198deg)
+    brightness(99%) contrast(87%);
+  --text: #ffffff;
+  --black: #000;
+  --g-color: rgba(255, 255, 255, 0.6);
+  --btn: rgb(139, 92, 246);
+  --btn-shadow: #6e7906;
+  --g-back: #131415;
+  --b-back: rgba(16, 18, 26, 0.5);
+}
+
+.light {
+  --background-color: linear-gradient(
+    180deg,
+    rgb(243, 241, 248) 0%,
+    rgb(193, 201, 243) 57%
+  );
+  --hb-back: invert(4%) sepia(78%) saturate(7446%) hue-rotate(268deg)
+    brightness(90%) contrast(109%);
+  --text: #000;
+  --black: #fff;
+  --g-color: rgb(80, 80, 80);
+  --btn: rgb(139, 92, 246);
+  --btn-shadow: #6e7906;
+  --g-back: #90c8fd;
+  --b-back: rgba(196, 215, 255, 0.979);
+}

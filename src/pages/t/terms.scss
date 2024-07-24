@@ -1,0 +1,23 @@
+@use "../../mix.scss" as *;
+.terms_contanier {
+  color: var(--text);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @include breack_down(large) {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+  h2 {
+    margin-bottom: 0.4rem;
+    font-size: 20px;
+  }
+  p {
+    color: var(--g-color);
+    margin-bottom: 0.4rem;
+  }
+  li {
+    color: var(--g-color);
+    margin-bottom: 0.4rem;
+  }
+}

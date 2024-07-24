@@ -1,0 +1,316 @@
+@use "../../mix.scss" as *;
+.portfolio_hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .portfolio_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    .port_back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .portfolio_text {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    @include breack_down(large) {
+      width: 90%;
+    }
+    h1 {
+      font-size: 50px;
+      color: var(--text);
+      @include breack_down(large) {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: var(--g-color);
+    }
+    button {
+      background-color: var(--btn);
+      border: none;
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 1rem;
+      box-shadow: 0 10px 20px -10px var(--btn-shadow);
+      font-weight: 400;
+      width: fit-content;
+    }
+  }
+}
+
+.port_benefits {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include breack_down(large) {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .port_benefits_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    @include breack_down(large) {
+      margin-bottom: 0;
+    }
+    h3 {
+      color: var(--btn);
+    }
+    h2 {
+      color: var(--text);
+      font-size: 36px;
+      @include breack_down(large) {
+        font-size: 30px;
+        text-align: center;
+      }
+    }
+    p {
+      color: var(--g-color);
+      width: 70%;
+      text-align: center;
+      @include breack_down(large) {
+        width: 90%;
+      }
+    }
+  }
+  .pre_divs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    @include breack_down(large) {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pre_div {
+      width: 24vw;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      @include breack_down(large) {
+        width: 90%;
+      }
+      .pre_div_text {
+        color: var(--g-color);
+        .pre_tiv_title {
+          color: var(--text);
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+.highlight {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin: 5rem 4rem;
+  @include breack_down(large) {
+    margin: 2rem;
+  }
+  .h_title {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+
+    h3 {
+      color: var(--btn);
+    }
+    h2 {
+      color: var(--text);
+      font-size: 36px;
+      @include breack_down(large) {
+        font-size: 30px;
+      }
+    }
+    p {
+      color: var(--g-color);
+      width: 70%;
+      @include breack_down(large) {
+        width: 90%;
+      }
+    }
+  }
+  .highlite_body {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+    justify-content: space-between;
+    @include breack_down(large) {
+      flex-direction: column;
+    }
+    img {
+      width: 50%;
+      @include breack_down(large) {
+        width: 90%;
+      }
+    }
+    .h_left {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .h_left_div {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        h3 {
+          color: var(--text);
+        }
+        h4 {
+          color: var(--g-color);
+          outline: 2px solid var(--g-color);
+          border-radius: 50%;
+          width: 1rem;
+          height: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+        p {
+          color: var(--g-color);
+        }
+      }
+    }
+    .slider_container {
+      width: 60%;
+      @include breack_down(large) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      button {
+        &::before {
+          color: var(--btn);
+        }
+      }
+    }
+  }
+  .hb_reverse {
+    flex-direction: row-reverse;
+    @include breack_down(large) {
+      flex-direction: column;
+    }
+  }
+}
+.port_logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  @include breack_down(large) {
+    justify-content: space-between;
+  }
+  img {
+    cursor: pointer;
+    width: 5rem !important;
+    &:hover {
+      scale: 1.06;
+    }
+  }
+}
+.colab {
+  display: flex;
+  flex-direction: column;
+  .colab_top {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    @include breack_down(large) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .colab_div {
+      background-color: var(--g-back);
+      width: 45%;
+      border-radius: 20px;
+      overflow: hidden;
+      @include breack_down(large) {
+        width: 90%;
+      }
+      .colab_div_text {
+        padding: 2rem 1rem;
+        h3 {
+          color: var(--text);
+          margin-bottom: 1rem;
+        }
+        p {
+          width: 95%;
+          color: var(--g-color);
+        }
+      }
+      img {
+        width: 96%;
+        float: right;
+      }
+    }
+  }
+  .colab_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 5rem 0;
+    h2 {
+      color: var(--text);
+      font-size: 55px;
+      width: 70%;
+      @include breack_down(large) {
+        font-size: 36px;
+      }
+    }
+    a {
+      background-color: var(--btn);
+      border: none;
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 1rem;
+      box-shadow: 0 10px 20px -10px var(--btn-shadow);
+      font-weight: 400;
+      width: fit-content;
+      text-decoration: none;
+    }
+  }
+}
+.slider_container_maharaja_desktop {
+  @include breack_down(large) {
+    display: none !important;
+  }
+}
+.slider_container_maharaja_mobile {
+  @include breack_up(small) {
+    display: none !important;
+  }
+}

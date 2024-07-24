@@ -1,0 +1,50 @@
+@use "../../../mix.scss" as *;
+.pre_contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presence_container {
+  display: flex;
+  width: 85%;
+  background-color: var(--b-back);
+  border-radius: 20px;
+  @include breack_down(large) {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  img {
+    width: 60%;
+    @include breack_down(large) {
+      width: 100%;
+    }
+  }
+  .presence_left {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    h2 {
+      font-size: 36px;
+      color: var(--text);
+    }
+    p {
+      color: var(--g-color);
+    }
+    a {
+      background-color: var(--btn);
+      border: none;
+      color: var(--text);
+      padding: 12px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 1rem;
+      box-shadow: 0 10px 20px -10px var(--btn-shadow);
+      font-weight: 400;
+      width: fit-content;
+      text-decoration: none;
+    }
+  }
+}

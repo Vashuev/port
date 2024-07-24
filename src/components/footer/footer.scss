@@ -1,0 +1,85 @@
+@use "../../mix.scss" as *;
+.footer_container {
+  padding: 5rem 4rem;
+  @include breack_down(large) {
+    padding: 2rem;
+  }
+  .footer_top {
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    @include breack_down(large) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .footer_top_left {
+      img {
+        width: 10rem;
+      }
+      .footer_links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 1rem;
+        @include breack_down(large) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
+        a {
+          text-decoration: none;
+          color: var(--g-color);
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            color: var(--btn);
+          }
+        }
+      }
+    }
+    .footer_top_right {
+      display: flex;
+      gap: 1rem;
+      a {
+        text-decoration: none;
+        color: var(--text);
+        &:hover {
+          color: var(--btn);
+        }
+      }
+      .active {
+        color: var(--btn);
+      }
+      .pending {
+        color: var(--text);
+      }
+    }
+  }
+  .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: var(--g-color);
+    @include breack_down(large) {
+      flex-direction: column;
+    }
+    .footer_bottom_links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1rem;
+      @include breack_down(large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      a {
+        text-decoration: none;
+        color: var(--g-color);
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+          color: var(--btn);
+        }
+      }
+    }
+  }
+}
