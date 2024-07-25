@@ -1,17 +1,26 @@
 @use "../../mix.scss" as *;
+.nav_container_active {
+  width: 90vw !important;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, var(--nav-back) 1px);
+  background-size: 4px 4px;
+  border: 1px solid var(--nav-border);
+}
 .nav_container {
   position: fixed;
   z-index: 100;
-  width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(75, 91, 107, 0.411);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(17px);
-  -webkit-backdrop-filter: blur(17px);
-  border: 1px solid rgba(99, 123, 147, 0.03);
+  top: 1rem;
+  width: 80vw;
+  left: 50%;
+  translate: -50% 0;
+  border-radius: 999px;
+  @include breack_down(large) {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
   .nav_logo {
     width: 7rem;
   }
@@ -36,41 +45,11 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-  }
-  .opened_ham {
-    top: 3.5rem !important;
-  }
-  .nav_links_mob_container {
-    background-color: var(--g-back);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: -120vh;
-    left: 0;
-    padding-top: 5rem;
-    z-index: 10000;
-
-    .nav_links_mob {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-      justify-content: center;
-      @include breack_up(small) {
-        display: none !important;
-      }
-      a {
-        text-decoration: none;
-        color: var(--text);
-      }
-      .active {
-        color: var(--btn);
-      }
-      .pending {
-        color: var(--text);
-      }
+    @include breack_down(large) {
+      gap: 1rem;
     }
   }
+
   .theme_btn {
     background-color: var(--b-back);
     padding: 0.5rem;
@@ -86,6 +65,40 @@
         brightness(96%) contrast(101%);
     }
   }
+}
+.nav_links_mob_container {
+  background-color: var(--g-back);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -120vh;
+  left: 0;
+  padding-top: 5rem;
+  z-index: 10000;
+
+  .nav_links_mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    @include breack_up(small) {
+      display: none !important;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text);
+    }
+    .active {
+      color: var(--btn);
+    }
+    .pending {
+      color: var(--text);
+    }
+  }
+}
+.opened_ham {
+  top: 4.7rem !important;
 }
 .w_0 {
   width: 0 !important;
