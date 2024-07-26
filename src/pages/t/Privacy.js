@@ -13,11 +13,10 @@ const Privacy = () => {
       <div className="terms_div">
         <h2>Introduction:</h2>
         <p>
-          Welcome to scared2compile! This Privacy Policy outlines how we
-          collect, use, and protect your personal information when you visit our
-          website or engage with our services. By using
-          https://growingseedtech.com/, you agree to the terms outlined in this
-          policy.
+          Welcome to WebStimulate! This Privacy Policy outlines how we collect,
+          use, and protect your personal information when you visit our website
+          or engage with our services. By using https://growingseedtech.com/,
+          you agree to the terms outlined in this policy.
         </p>
       </div>
       <div className="terms_div">

@@ -13,9 +13,28 @@
       gap: 2rem;
     }
     .footer_top_left {
-      img {
-        width: 10rem;
+      display: flex;
+      gap: 2rem;
+      .insta_logo {
+        height: 2.5rem;
+        @include breack_down(large) {
+          height: 2rem;
+        }
+        @include breack_up(small) {
+          &:hover {
+            cursor: pointer;
+            scale: 1.07;
+          }
+        }
       }
+      .footer_logo {
+        height: 2.5rem;
+        border-radius: 10px;
+        @include breack_down(large) {
+          height: 2rem;
+        }
+      }
+
       .footer_links {
         display: flex;
         align-items: center;

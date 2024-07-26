@@ -61,7 +61,7 @@ const Contact = () => {
     <div>
       <div className="contact_text">
         <div className="b_blur"></div>
-        <h1>Welcome to Scared2Compile!</h1>
+        <h1>Welcome to WebStimulate!</h1>
         <p>
           If you have any questions, or feedback, or need support, please don't
           hesitate to reach out to us. Fill out the form below and our team will

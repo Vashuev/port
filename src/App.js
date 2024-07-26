@@ -39,7 +39,7 @@ const App = () => {
               <Route element={<Refund />} path="/refund" />
               <Route element={<Privacy />} path="/privacy" />
             </Routes>
-            <Footer />
+            <Footer theme={theme} />
           </main>
         </BrowserRouter>
       </main>

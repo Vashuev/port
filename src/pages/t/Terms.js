@@ -15,7 +15,7 @@ const Terms = () => {
       <div className="terms_div">
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing or using the scared2compile website
+          By accessing or using the WebStimulate website
           (www.growingseedtech.com) and our IT training services (the
           "Services"), you agree to comply with and be bound by these Terms and
           Conditions. If you do not agree to these terms, please do not use our
@@ -110,19 +110,18 @@ const Terms = () => {
       <div className="terms_div">
         <h2>7. Termination</h2>
         <p>
-          Scared2compile reserves the right to terminate or suspend your access
-          to the Services at any time, with or without cause and with or without
+          WebStimulate reserves the right to terminate or suspend your access to
+          the Services at any time, with or without cause and with or without
           notice.
         </p>
       </div>
       <div className="terms_div">
         <h2>8. Changes to Terms and Conditions</h2>
         <p>
-          Scared2compile may update these Terms and Conditions from time to
-          time. Any changes will be effective immediately upon posting the
-          revised version on the website. Your continued use of the Services
-          after the posting of any changes constitutes acceptance of those
-          changes.
+          WebStimulate may update these Terms and Conditions from time to time.
+          Any changes will be effective immediately upon posting the revised
+          version on the website. Your continued use of the Services after the
+          posting of any changes constitutes acceptance of those changes.
         </p>
       </div>
       <div className="terms_div">

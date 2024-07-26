@@ -22,7 +22,11 @@
     padding: 0.5rem 1rem;
   }
   .nav_logo {
-    width: 7rem;
+    width: 10rem;
+    border-radius: 10px;
+    @include breack_down(large) {
+      width: 7rem;
+    }
   }
   .nav_links_desk {
     display: flex;

@@ -3,7 +3,8 @@ import "./nav.scss";
 import { Link, NavLink } from "react-router-dom";
 import sun from "../../images/sun.svg";
 import moon from "../../images/moon.svg";
-import logo from "../../images/footerLogo.png";
+import logo from "../../images/logos/logo1.svg";
+import logo1 from "../../images/logos/logo11.svg";
 const Nav = ({ theme, handleTogle }) => {
   const [ham, setHam] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -49,7 +50,7 @@ const Nav = ({ theme, handleTogle }) => {
             to="/faq"
             onClick={() => setHam(false)}
           >
-            F.A,Q
+            FAQ's
           </NavLink>
           <NavLink
             className={({ isActive, isPending }) =>
@@ -68,7 +69,11 @@ const Nav = ({ theme, handleTogle }) => {
         }`}
       >
         <Link to="/">
-          <img src={logo} alt="" className="nav_logo" />
+          <img
+            src={theme !== "dark" ? logo : logo1}
+            alt=""
+            className="nav_logo"
+          />
         </Link>
         <div className="nav_links_desk">
           <NavLink

@@ -14,10 +14,10 @@ const Refund = () => {
       <div className="terms_div">
         <h2>1. Cancellation and Refund Policy Overview</h2>
         <p>
-          Thank you for choosing scared2compile for your online IT training
-          needs. We strive to provide quality services to our users. This
-          Cancellation and Refund Policy outlines the terms under which
-          cancellations and refunds are processed.
+          Thank you for choosing WebStimulate for your online IT training needs.
+          We strive to provide quality services to our users. This Cancellation
+          and Refund Policy outlines the terms under which cancellations and
+          refunds are processed.
         </p>
       </div>
       <div className="terms_div">
