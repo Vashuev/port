@@ -14,7 +14,7 @@ const Footer = ({ theme }) => {
             alt=""
             className="footer_logo"
           />
-          <img src={insta} alt="" className="insta_logo" />
+          {/* <img src={insta} alt="" className="insta_logo" /> */}
         </div>
         <div className="footer_top_right">
           <NavLink

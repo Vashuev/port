@@ -5,6 +5,7 @@ import sun from "../../images/sun.svg";
 import moon from "../../images/moon.svg";
 import logo from "../../images/logos/logo1.svg";
 import logo1 from "../../images/logos/logo11.svg";
+import wa from "../../images/whatsapp.svg";
 const Nav = ({ theme, handleTogle }) => {
   const [ham, setHam] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -127,6 +128,15 @@ const Nav = ({ theme, handleTogle }) => {
           </div>
         </div>
       </nav>
+      <div className="wa">
+        <a
+          href="https://wa.me/918076632541"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={wa} alt="" />
+        </a>
+      </div>
     </>
   );
 };

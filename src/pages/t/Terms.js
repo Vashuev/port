@@ -15,11 +15,10 @@ const Terms = () => {
       <div className="terms_div">
         <h2>1. Acceptance of Terms</h2>
         <p>
-          By accessing or using the WebStimulate website
-          (www.growingseedtech.com) and our IT training services (the
-          "Services"), you agree to comply with and be bound by these Terms and
-          Conditions. If you do not agree to these terms, please do not use our
-          Services.
+          By accessing or using the WebStimulate website (www.webstimulate.in)
+          and our IT training services (the "Services"), you agree to comply
+          with and be bound by these Terms and Conditions. If you do not agree
+          to these terms, please do not use our Services.
         </p>
       </div>
       <div className="terms_div">

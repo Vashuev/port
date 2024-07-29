@@ -49,17 +49,13 @@
       justify-content: center;
     }
     @include breack_down(large) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      grid-template-columns: 1fr 1fr;
     }
     img {
-      // width: 8vw;
       height: 5rem !important;
       height: fit-content;
       @include breack_down(large) {
-        // width: 50%;
+        width: 100%;
       }
     }
   }

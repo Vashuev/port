@@ -150,3 +150,17 @@
   -o-transform: translateY(-7px) rotate(-45deg);
   transform: translateY(-7px) rotate(-45deg);
 }
+
+.wa {
+  position: fixed;
+  z-index: 100;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  &:hover {
+    scale: 1.08;
+  }
+  img {
+    width: 4rem;
+  }
+}

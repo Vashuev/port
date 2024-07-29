@@ -30,16 +30,34 @@ const Port = () => {
       </div>
       <div className="port_r" data-aos="fade-up">
         <div className="port_r_div">
-          <img src={f} alt="" />
+          <a
+            href="https://growingseedtech.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={f} alt="" />
+          </a>
         </div>
         <div className="port_r_div">
           <img src={s} alt="" />
         </div>
         <div className="port_r_div">
-          <img src={t} alt="" />
+          <a
+            href="https://www.ssgta.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={t} alt="" />
+          </a>
         </div>
         <div className="port_r_div">
-          <img src={fo} alt="" />
+          <a
+            href="https://maharajamoldedfurniture.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={fo} alt="" />
+          </a>
         </div>
       </div>
     </div>
