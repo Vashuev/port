@@ -63,9 +63,11 @@ const Contact = () => {
         <div className="b_blur"></div>
         <h1>Welcome to WebStimulate!</h1>
         <p>
-          If you have any questions, or feedback, or need support, please don't
-          hesitate to reach out to us. Fill out the form below and our team will
-          get back to you as soon as possible.
+          If you have any questions, feedback, or need support related to our
+          services in website development, app development, software
+          development, or automation, please don't hesitate to reach out to us.
+          Fill out the form below, and our team will get back to you as soon as
+          possible.
         </p>
         <button onClick={scrollToElement}>Contact Us</button>
       </div>
@@ -73,9 +75,10 @@ const Contact = () => {
         <div className="contact_form_title">
           <h2>Contact Us</h2>
           <p>
-            Provide a user-friendly contact form for visitors to easily reach
-            out to you. Make it convenient for visitors to send their inquiries
-            and feedback directly through the website.
+            We offer comprehensive services in website development, app
+            development, software development, and automation. Please use the
+            form below to inquire about our offerings, or to provide feedback or
+            requests.
           </p>
         </div>
         <form onSubmit={handleSubmit}>

@@ -137,6 +137,29 @@ const Nav = ({ theme, handleTogle }) => {
           <img src={wa} alt="" />
         </a>
       </div>
+      <div className="side_bar">
+        <a
+          href="https://wa.me/918076632541"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={wa} alt="" />
+        </a>
+        <a
+          href="https://wa.me/918076632541"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={wa} alt="" />
+        </a>
+        <a
+          href="https://wa.me/918076632541"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={wa} alt="" />
+        </a>
+      </div>
     </>
   );
 };

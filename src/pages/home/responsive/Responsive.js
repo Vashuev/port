@@ -36,12 +36,12 @@ const Responsive = () => {
         </div>
         <div className="res_right" data-aos="fade-up">
           <h3>Functionality</h3>
-          <h2>Responsive Development</h2>
+          <h2>Responsive & Scalable Development</h2>
           <p>
-            Our responsive development services guarantee flawless functionality
-            on any device, providing a seamless and consistent user experience.
-            Engage your audience with a design that adapts to preferences and
-            ensures accessibility.
+            Our development services ensure flawless functionality across
+            websites, apps, and software on any device. We deliver a seamless
+            and consistent user experience, engaging your audience with designs
+            that adapt to preferences and ensure accessibility.
           </p>
           <div className="res_divs">
             {arr.map((item, index) => {
@@ -64,7 +64,10 @@ const Responsive = () => {
               <img src={ch1} alt="" />
               <div>
                 <h3>Custom Design</h3>
-                <p>Tailored websites that reflect your brand.</p>
+                <p>
+                  Tailored digital solutions that reflect your brand, including
+                  websites, apps, and software.
+                </p>
               </div>
             </div>
             <div className="choose_div choose_div_2">

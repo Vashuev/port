@@ -16,13 +16,14 @@ const Port = () => {
     <div className="port_containr">
       <div className="port_l" data-aos="fade-up">
         <h2>
-          Trusted by Businesses Across Various Industries Who Value Professional
-          Websites
+          Trusted by Businesses Across Various Industries for Professional
+          Development Solutions
         </h2>
         <p>
-          Join the ranks of our satisfied clients who have transformed their
-          online presence with our services. Our portfolio speaks volumes about
-          our commitment to excellence.
+          Join our satisfied clients who have elevated their digital presence
+          with our expert services. From websites to apps, software, and
+          automation, our portfolio reflects our dedication to delivering
+          excellence.
         </p>
         <Link to="/portfolio">
           <button>Explore Out Portfolio</button>

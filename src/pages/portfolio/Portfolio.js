@@ -62,15 +62,15 @@ const Portfolio = () => {
         <div className="portfolio_text">
           <h1>Featured Projects</h1>
           <p>
-            See how we create user-friendly, SEO-optimized websites that drive
-            business growth.
+            See how we create user-friendly websites, robust applications, and
+            intelligent automation solutions that drive business growth.
           </p>
           <button onClick={scrollToElement}>Explore More</button>
         </div>
       </div>
       <div className="port_benefits">
         <div className="port_benefits_title">
-          <h3>Portfolio</h3>
+          <h3>Our Work: Websites, Apps & Automation</h3>
         </div>
       </div>
       <div className="highlight" ref={myElementRef}>
@@ -88,7 +88,10 @@ const Portfolio = () => {
                   <img src={mLogo} alt="" />
                 </a>
               </div>
-              <p>Website for the India’s No. Chairs Company</p>
+              <p>
+                Comprehensive digital solution including a responsive website
+                and a companion mobile app for the India’s No. 1 Chairs Company.
+              </p>
             </div>
             <div className="h_left_div">
               <h4 className="active_h">1</h4>

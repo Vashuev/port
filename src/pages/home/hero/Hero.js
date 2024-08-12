@@ -13,8 +13,8 @@ const Hero = ({ scrollToElement }) => {
       <div className="hero_container">
         <img src={b} alt="" className="hb" />
         <h1 data-aos="fade-up">
-          Grow Your Business with User-
-          <br /> <span>Friendly, SEO-Optimized Websites</span>
+          Grow Your Business with Cutting-Edge
+          <br /> <span>Website, App, and Software Solutions</span>
         </h1>
         <p data-aos="fade-up">
           Discover our comprehensive website development services tailored to

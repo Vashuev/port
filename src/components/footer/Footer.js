@@ -44,7 +44,10 @@ const Footer = ({ theme }) => {
         </div>
       </div>
       <div className="footer_bottom">
-        <p>© 2024 WebStimulate All rights reserved</p>
+        <p>
+          © 2024 WebStimulate | Website, App, Software Development & Automation
+          Solutions. All rights reserved.
+        </p>
       </div>
     </footer>
   );

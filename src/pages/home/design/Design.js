@@ -28,11 +28,12 @@ const Design = () => {
     <div className="design_container">
       <div className="design_left" data-aos="fade-up">
         <h3>Custom Design</h3>
-        <h2>Tailored Custom Design Services</h2>
+        <h2>Tailored Design for All Your Digital Needs</h2>
         <p>
-          Our custom design services create visually appealing websites that
-          reflect your brand’s identity and values. Stand out with unique,
-          professional designs crafted to capture and retain customer attention.
+          Our custom design services go beyond websites to include apps and
+          software that reflect your brand's identity and values. Stand out with
+          unique, professional designs crafted to captivate and retain your
+          audience across all platforms.
         </p>
         <div className="design_divs">
           {arr.map((item, index) => {

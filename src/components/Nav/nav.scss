@@ -157,10 +157,31 @@
   bottom: 2rem;
   right: 2rem;
   cursor: pointer;
+  @include breack_down(large) {
+    bottom: 1rem;
+    right: 1rem;
+  }
   &:hover {
     scale: 1.08;
   }
   img {
-    width: 4rem;
+    height: 5rem;
+    @include breack_down(large) {
+      height: 3rem;
+    }
+  }
+}
+.side_bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  translate: -10% -50%;
+  z-index: 100;
+  img {
+    height: 3rem;
+    @include breack_down(large) {
+      height: 2rem;
+    }
   }
 }

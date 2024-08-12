@@ -42,12 +42,14 @@ const Pres = ({ myElementRef }) => {
   return (
     <div className="pre_container" ref={myElementRef}>
       <div className="pre_text" data-aos="fade-up">
-        <h3>Website Development</h3>
-        <h2>Elevate Online Presence</h2>
+        <h3>Website, App & Software Development</h3>
+        <h2>Comprehensive Digital Solutions</h2>
         <p>
-          Elevate your online presence with our dedicated website development
-          services. Gain a competitive edge with custom designs, mobile-friendly
-          platforms, and SEO strategies that drive growth and engagement.
+          Enhance your digital presence with our expert development services.
+          Whether it's a website, mobile app, or software, our solutions are
+          tailored to your needs. Benefit from custom designs, responsive
+          platforms, and effective SEO strategies that drive growth and
+          engagement.
         </p>
       </div>
       <div className="pre_divs">

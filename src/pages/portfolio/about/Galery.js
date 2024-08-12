@@ -27,8 +27,8 @@ const Galery = () => {
         <div className="about_show_title">
           <h2>Visual Showcase</h2>
           <p>
-            Creative solutions with custom design, responsive development, SEO
-            optimization, and post-launch support
+            Creative solutions with custom design, responsive development, app
+            development, intelligent automation, and post-launch support.
           </p>
         </div>
         <div className="about_divs">
