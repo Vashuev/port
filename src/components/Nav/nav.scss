@@ -175,13 +175,17 @@
   position: fixed;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   top: 50%;
-  translate: -10% -50%;
+  translate: 25% -50%;
   z-index: 100;
   img {
     height: 3rem;
     @include breack_down(large) {
       height: 2rem;
+    }
+    &:hover {
+      scale: 1.08;
     }
   }
 }

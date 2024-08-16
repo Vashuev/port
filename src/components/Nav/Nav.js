@@ -6,6 +6,9 @@ import moon from "../../images/moon.svg";
 import logo from "../../images/logos/logo1.svg";
 import logo1 from "../../images/logos/logo11.svg";
 import wa from "../../images/whatsapp.svg";
+import insta from "../../images/instagram.svg";
+import face from "../../images/facebook.svg";
+import linked from "../../images/linkedin.svg";
 const Nav = ({ theme, handleTogle }) => {
   const [ham, setHam] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -143,21 +146,21 @@ const Nav = ({ theme, handleTogle }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={wa} alt="" />
+          <img src={face} alt="" />
         </a>
         <a
           href="https://wa.me/918076632541"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={wa} alt="" />
+          <img src={linked} alt="" />
         </a>
         <a
           href="https://wa.me/918076632541"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={wa} alt="" />
+          <img src={insta} alt="" />
         </a>
       </div>
     </>
