@@ -142,21 +142,21 @@ const Nav = ({ theme, handleTogle }) => {
       </div>
       <div className="side_bar">
         <a
-          href="https://wa.me/918076632541"
+          href="https://www.facebook.com/profile.php?id=61564329153925"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={face} alt="" />
         </a>
         <a
-          href="https://wa.me/918076632541"
+          href="https://www.linkedin.com/in/web-stimulate-b018a9321"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={linked} alt="" />
         </a>
         <a
-          href="https://wa.me/918076632541"
+          href="https://www.instagram.com/webstimulate.in"
           target="_blank"
           rel="noopener noreferrer"
         >
