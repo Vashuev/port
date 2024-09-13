@@ -133,7 +133,7 @@ const Nav = ({ theme, handleTogle }) => {
       </nav>
       <div className="wa">
         <a
-          href="https://wa.me/918076632541"
+          href="https://wa.me/919266724252"
           target="_blank"
           rel="noopener noreferrer"
         >
