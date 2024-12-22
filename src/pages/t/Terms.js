@@ -33,7 +33,7 @@ const Terms = () => {
         <p>
           2.2 Cancellation Process: <br />
           To initiate a cancellation, please contact our support team at
-          scared2compile0@gmail.com Include your full name, contact information,
+          webstimulate.in@gmail.com Include your full name, contact information,
           and details of the purchased service.
         </p>
         <p>
@@ -127,7 +127,7 @@ const Terms = () => {
         <h2>9. Contact Us</h2>
         <p>
           If you have any questions or concerns about these Terms and
-          Conditions, please contact us at scared2compile0@gmail.com.
+          Conditions, please contact us at webstimulate.in@gmail.com.
         </p>
       </div>
     </div>

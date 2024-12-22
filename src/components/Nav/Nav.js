@@ -140,7 +140,7 @@ const Nav = ({ theme, handleTogle }) => {
           <img src={wa} alt="" />
         </a>
       </div>
-      <div className="side_bar">
+      {/* <div className="side_bar">
         <a
           href="https://www.facebook.com/profile.php?id=61564329153925"
           target="_blank"
@@ -162,7 +162,7 @@ const Nav = ({ theme, handleTogle }) => {
         >
           <img src={insta} alt="" />
         </a>
-      </div>
+      </div> */}
     </>
   );
 };

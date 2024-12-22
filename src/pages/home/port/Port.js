@@ -40,7 +40,13 @@ const Port = () => {
           </a>
         </div>
         <div className="port_r_div">
-          <img src={s} alt="" />
+          <a
+              href="https://sunnydayofficial.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <img src={s} alt="" />
+          </a>
         </div>
         <div className="port_r_div">
           <a

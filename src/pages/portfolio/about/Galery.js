@@ -12,8 +12,8 @@ const Galery = () => {
     { img: g3, link: "https://growingseedtech.com/" },
     { img: g5, link: "https://muchsite.github.io/tradeclone/" },
     { img: g2, link: "https://www.ssgta.com/" },
-    { img: g1, link: "" },
-    { img: g6, link: "" },
+    { img: g1, link: "https://iskcondadri.com/" },
+    { img: g6, link: "https://uddhavasabha.com/" },
   ];
   useEffect(() => {
     const scroll = () => {
