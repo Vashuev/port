@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./contact.scss";
 import axios from "axios";
+
 const Contact = () => {
   useEffect(() => {
     const scroll = () => {
@@ -8,48 +9,47 @@ const Contact = () => {
     };
     scroll();
   }, []);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [number, setNnumber] = useState("");
+  const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
-  const [sending, setSending] = useState("");
-  const [sent, setSent] = useState("");
-  const serviceID = process.env.REACT_APP_SERVICE_ID;
-  const templateID = process.env.REACT_APP_TEMPLATE;
-  const userID = process.env.REACT_APP_PYBLIC;
+  const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const data = {
-      service_id: serviceID,
-      template_id: templateID,
-      user_id: userID,
-      template_params: {
-        name,
-        email,
-        number,
-        message,
-      },
+      name,
+      email,
+      number,
+      message,
     };
-    const headers = { "Content-Type": "application/json" };
+
     setSending(true);
     setSent(false);
+
     try {
-      const response = await axios.post(
-        "https://api.emailjs.com/api/v1.0/email/send",
-        data,
-        { headers }
-      );
+      // POST request to the Django API
+      const response = await axios.post("http://webstimulate.in/backend/api/contact/", data, {
+        headers: { "Content-Type": "application/json" },
+      });
+      console.log(response.data); // Optional: Handle the response if needed
+
+      // Reset the form and show the success message
       setSending(false);
       setEmail("");
       setMessage("");
       setName("");
-      setNnumber("");
+      setNumber("");
       setSent(true);
     } catch (error) {
-      console.log(error);
+      console.error("Error sending contact form:", error);
+      setSending(false);
     }
   };
+
   const myElementRef = useRef(null);
 
   const scrollToElement = () => {
@@ -57,6 +57,7 @@ const Contact = () => {
       myElementRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div>
       <div className="contact_text">
@@ -110,7 +111,7 @@ const Contact = () => {
               type="text"
               name="subject"
               value={number}
-              onChange={(e) => setNnumber(e.currentTarget.value)}
+              onChange={(e) => setNumber(e.currentTarget.value)}
               placeholder="Enter your number"
             />
           </div>

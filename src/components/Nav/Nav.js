@@ -65,6 +65,15 @@ const Nav = ({ theme, handleTogle }) => {
           >
             Contact
           </NavLink>
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            to="/cards"
+            onClick={() => setHam(false)}
+          >
+            Digital Card
+          </NavLink>
         </div>
       </div>
       <nav
@@ -111,6 +120,14 @@ const Nav = ({ theme, handleTogle }) => {
             to="/contact"
           >
             Contact
+          </NavLink>
+          <NavLink
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+            to="/cards"
+          >
+            Digital Card
           </NavLink>
         </div>
 

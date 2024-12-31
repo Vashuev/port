@@ -14,6 +14,7 @@ import Faq from "./pages/faq/Faq";
 import Terms from "./pages/t/Terms";
 import Refund from "./pages/t/Refund";
 import Privacy from "./pages/t/Privacy";
+import DigitalBusinessCards from "./pages/card/digitalCard"; 
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -38,6 +39,7 @@ const App = () => {
               <Route element={<Terms />} path="/terms" />
               <Route element={<Refund />} path="/refund" />
               <Route element={<Privacy />} path="/privacy" />
+              <Route element={<DigitalBusinessCards />} path="/cards" />
             </Routes>
             <Footer theme={theme} />
           </main>
