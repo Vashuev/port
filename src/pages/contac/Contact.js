@@ -32,7 +32,7 @@ const Contact = () => {
 
     try {
       // POST request to the Django API
-      const response = await axios.post("http://webstimulate.in/backend/api/contact/", data, {
+      const response = await axios.post("https://webstimulate.in/backend/api/contact/", data, {
         headers: { "Content-Type": "application/json" },
       });
       console.log(response.data); // Optional: Handle the response if needed
